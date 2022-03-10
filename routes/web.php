@@ -22,5 +22,6 @@ Auth::routes();
 
 Route::get('/', 'App\Http\Controllers\ContactController@index')->name('index');
 Route::post('csv/export', 'App\Http\Controllers\ContactController@csvExport')->name('contact.csv.export');
+Route::post('csv/export', 'App\Http\Controllers\ContactController@csvExport')->name('contact.csv.export');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
